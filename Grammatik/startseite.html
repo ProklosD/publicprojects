@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Startseite</title>
+  <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: darkorange
+    }
+
+    li {
+      display: inline;
+    }
+
+    li {
+      display: inline;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a {color: white;}
+
+    li:hover {
+      background-color: darkslateblue;
+    }
+
+    .dropdown-content a:hover {
+      background-color:lightblue;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<ul>
+    <li><a href="default.asp">Home</a></li>
+    <div class="dropdown">
+    <li>Grammatik</li>
+    <div class="dropdown-content">
+      <a href="die_enklise_im_altgriechischen.html">Die Enklise im Altgriechischen</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+
+</html>

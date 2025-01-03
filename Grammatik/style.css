@@ -1,0 +1,49 @@
+html {
+    font-family: 'Lucida Grande', 'Times New Roman' sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: DarkRed;
+}
+
+body {
+    text-align: justify;
+    line-height: 1.7;
+    margin: 50px;
+    background-color: WhiteSmoke;
+    counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "" counter(section) ". ";
+}
+
+td {
+    vertical-align: top;
+}
+
+.longquote {
+    border: 2px solid darkblue;
+    padding: 17px;
+    border-collapse: collapse;
+
+    tr:hover {
+        background-color: LightGray;
+    }
+}
+
+
+.ollevelsrepeated {
+    counter-reset: subsection;
+    list-style-type: none;
+  }
+
+  .lilevelsrepeated::before {
+    counter-increment: subsection;
+    content: counters(subsection, ".") ". ";
+  }
